@@ -1,0 +1,5 @@
+input ("What's your name?")
+print ("Welcome to this quiz.")
+print ("This quiz is about capital cities of the world.")
+input ("What's the capital city of New Zealand?")
+print ("The capital city of New Zealand is Wellington")
