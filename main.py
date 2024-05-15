@@ -1,4 +1,3 @@
-QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
 score = 0
 play = "yes"
 # Get user's name
@@ -29,13 +28,13 @@ while play == "yes":
         b = "Auckland"
         c = "London"
         d = "Christchurch"
-        answer = input(QUESTION_FORMAT.format(question, a, b, c, d)).lower()
-        # Check the user the answerL
+        answer = input("{}\nA.{} B.{} C.{} D.{}".format(question, a, b, c, d)).lower()
+        # Check the user the answer
         if answer == a or answer == "a":
             print("Correct!")
             score += 5
             break
-        elif answer != a and answer != "a" and answer != b and answer != "b" and answer != c and answer != "c":
+        elif answer != a and answer != "a" and answer != b and answer != "b" and answer != c and answer != "c" and answer != d and answer != "d":
             print("That wasn't an option!")
         elif answer == "":
             print("Not sure?")
@@ -43,9 +42,8 @@ while play == "yes":
             print("Wrong!")
 
         question_attempts -= 1
-print("The capital city of New Zealand is Wellington.")
-# End the quiz
-print("Well done {}. You finished the quiz. Your final score was {}".format(name, score))
-
-# Replay
-play = input("Do you want to play again?").lower()
+    print("The capital city of New Zealand is Wellington.")
+    # End the quiz
+    print("Well done {}. You finished the quiz. Your final score was {}".format(name, score))
+    # Replay
+    play = input("Do you want to play again?").lower()
