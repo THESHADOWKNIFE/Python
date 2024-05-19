@@ -12,7 +12,7 @@ print("This quiz is about capital cities of the world.")
 # Check number of question attempts
 while True:
     try:
-        tries = input("How many attempts do you want at each question? 1-4")
+        tries = input("How many attempts do you want at each question? 1-5")
         tries = int(tries)
         break
     except:
