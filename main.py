@@ -1,5 +1,19 @@
-score = 0
+import random
+
+QUESTION_FORMAT = "{}\nA.{} B.{} C.{} D.{}"
+GOOD_COMMENTS = ["Way to go!", "Keep it up!", "Fantastic!"]
+BAD_COMMENTS = ["Keep trying", "Maybe next time", "Don't give up"]
+QUESTIONS = ["What is the capital of New Zealand?",
+              "What is the most common pet in NZ?",
+                "What is the highest mountain in NZ?"]
+OPTIONS = [["Auckland", "Wellington", "Christchurch", "Dunedin"],
+           ["mouse", "dog", "bird", "cat"],
+           ["Mt. Taranaki", "Mt. Eden", "Mt. Aoraki", "Mt. Ruapehu"]]
+SHORT_OPTIONS = ["a", "b", "c", "d"]
+ANSWERS = [1,2,3]
+
 play = "yes"
+
 # Get user's name
 name = input("What's your name?")
 # Greet the user and introduce the quiz
@@ -12,7 +26,7 @@ print("This quiz is about capital cities of the world.")
 # Check number of question attempts
 while True:
     try:
-        tries = input("How many attempts do you want at each question? 1-5")
+        tries = input("How many attempts do you want at each question? 1-4")
         tries = int(tries)
         break
     except:
