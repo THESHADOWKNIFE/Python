@@ -25,7 +25,7 @@ print("Or maybe you are too kind that you just can't forgive yourself for killin
 input()
 Choice = input("There is not much time for you to think, you must make the choice now. YES OR NO!")
 input()
-if Choice == "YES".lower().upper():
+if Choice == "YES".lower():
     print("The atomic bomb left the bomb bay of the plane and fell from a height of thousands of feet.")
     input()
     print("Soon, journalists from all over the Allied countries reported.")
